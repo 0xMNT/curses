@@ -9,13 +9,13 @@ curses.noecho()
 curses.cbreak()
 curses.curs_set(False)
 
-maxlines, maxcols = curses.LINES - 1, curses.COLS - 1
-centerx, centery = maxlines // 2, maxcols // 2
+max_lines, max_cols = curses.LINES - 1, curses.COLS - 1
+center_x, center_y = max_lines // 2, max_cols // 2
 
 # game logic
 def main():
     def draw():
-        stdscr.addstr(centerx, centery, "Hello Curses")
+        stdscr.addstr(center_x, center_y, "Hello Curses")
         stdscr.refresh()
 
     running = True
